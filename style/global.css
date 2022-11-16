@@ -1,0 +1,110 @@
+@import "reset.css";
+@import url("https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap");
+
+:root {
+  /* --- Colors --- */
+  --primary-blue: hsl(238, 29%, 16%);
+  --primary-red: hsl(14, 88%, 65%);
+  --bg-violet: hsl(273, 75%, 66%);
+  --bg-blue: hsl(240, 73%, 65%);
+  --neutral-blue-800: hsl(237, 12%, 33%);
+  --neutral-blue-600: hsl(240, 6%, 50%);
+  --neutral-blue-400: hsl(240, 5%, 91%);
+  --border-color: hsla(240, 6%, 50%, 0.08);
+
+  /* --- Typography --- */
+  --sans: "Kumbh Sans", sans-serif;
+  --regular: 400;
+  --bold: 700;
+}
+
+html {
+  font-family: var(--sans);
+  font-size: 12px;
+}
+
+body {
+  width: 100vw;
+  height: 100vh;
+  background-image: linear-gradient(var(--bg-violet), var(--bg-blue));
+  background-attachment: fixed;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+  margin: 0;
+}
+
+main {
+  width: 90%;
+  height: auto;
+  background-color: var(--neutral-blue-400);
+  text-align: center;
+  position: relative;
+  margin-top: 12rem;
+  border-radius: 1.5rem;
+  transition: margin-top 1500ms 100ms, height 500ms;
+}
+
+footer {
+  position: absolute;
+  bottom: 1.25rem;
+  display: none;
+}
+
+.woman-svg {
+  margin: auto;
+  position: absolute;
+  width: 20rem;
+  transform: translateY(-60%);
+}
+
+h1 {
+  margin: 1.25rem 0;
+  font-size: 2.25rem;
+  font-weight: 700;
+}
+
+.questions {
+  text-align: left;
+  margin: 2rem 2rem 2rem 2rem;
+  color: var(--neutral-blue-800);
+}
+
+.question {
+  padding: 1rem 0;
+  border-bottom: 1px solid var(--border-color);
+  border-
+}
+
+.question-title {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0.5rem 0;
+}
+
+.question h2 {
+  font-size: 1.15rem;
+}
+
+.active {
+  font-weight: var(--bold);
+}
+
+.question p {
+  display: none;
+  width: 90%;
+  overflow: hidden;
+}
+
+.hidden {
+  display: none;
+  opacity: 0;
+}
+
+@media min-width(768px) {
+  body {
+    height: 100vh;
+  }
+}
